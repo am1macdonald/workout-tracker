@@ -3,12 +3,16 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/inbox',
+    redirectTo: 'workout',
     pathMatch: 'full',
   },
   {
-    path: 'folder/:id',
+    path: 'workout',
     loadComponent: () =>
-      import('./folder/folder.page').then((m) => m.FolderPage),
+      import('./workout/workout.page').then((m) => m.WorkoutPage),
+  },
+  {
+    path: 'calendar',
+    loadComponent: () => import('./calendar/calendar.page').then( m => m.CalendarPage)
   },
 ];

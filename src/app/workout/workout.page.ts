@@ -3,13 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-folder',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+  selector: 'app-workout',
+  templateUrl: './workout.page.html',
+  styleUrls: ['./workout.page.scss'],
   standalone: true,
   imports: [IonicModule],
 })
-export class FolderPage implements OnInit {
+export class WorkoutPage implements OnInit {
   public folder!: string;
   private activatedRoute = inject(ActivatedRoute);
   constructor() {}
